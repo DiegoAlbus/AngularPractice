@@ -1,3 +1,6 @@
+<button (click)="blueClass = !blueClass" [ngClass]="{blue: blueClass}" [ngStyle]="{ 'font-size.px': fontSize }">Change button color</button>
+<hr>
+
 <input (keyup)="changeImage($event)" [value]="imageURL">
 <!-- <img [src]="imageURL"> -->
 
@@ -5,6 +8,12 @@
     <p>Some caption</p>
 </app-post>
 
-<p>Hello {{ name.toUpperCase() }}!</p>
+<p>Hello {{ name | titlecase }}!</p>
 <p>Hello {{ getName() }}!</p>
 <p>{{ 15 + 3 }}</p>
+<p>Currrent date with pipe: {{ currentDate | date }}</p>
+<p>Currrent date with pipe formatted: {{ currentDate | date : 'EE, MMMM d, y'}}</p>
+<p>Currency pipe: {{ cost | currency : 'EUR' }}</p>
+<p>Temperature with number pipe 1.0-0: {{ temperature | number : '1.0-0'}}</p>
+<p>Temperature with number pipe 1.2-5: {{ temperature | number : '1.2-5'}}</p>
+<pre>Output json (for debugging): {{ pizza | json}}</pre>

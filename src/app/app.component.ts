@@ -10,8 +10,17 @@ import { Component } from '@angular/core';
   // styles: ['']
 })
 export class AppComponent {
-  name = 'Luis';
+  name = 'luis ramirez';
   imageURL = 'https://picsum.photos/200/300';
+  currentDate = new Date();
+  cost = 9000;
+  temperature = 29.3;
+  pizza = {
+    toppings:['pepperoni', 'bacon'],
+    size: 'small'
+  }
+  blueClass = false;
+  fontSize = 16;
 
   getName(){
     return this.name;

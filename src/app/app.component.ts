@@ -10,8 +10,9 @@ import { Component } from '@angular/core';
   // styles: ['']
 })
 export class AppComponent {
-  name = 'luis ramirez';
+  name = 'albus dumbledore';
   imageURL = 'https://picsum.photos/200/300';
+  images = ['https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300'];
   currentDate = new Date();
   cost = 9000;
   temperature = 29.3;
